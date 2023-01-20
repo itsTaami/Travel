@@ -24,7 +24,9 @@ const BasicModal = () => {
 
   return (
     <div>
-      <Button onClick={handleOpen}>Open modal</Button>
+      <Button onClick={handleOpen} sx={{ color: "white" }}>
+        Sign-In
+      </Button>
       <Modal
         open={open}
         aria-labelledby="modal-modal-title"
