@@ -4,9 +4,29 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 import { Container } from "@mui/material";
 import Typography from "@mui/material/Typography";
+import SearchInput from "./Search";
+import Text from "./Text";
+
+
+
+
 
 const Body = () => {
-  return <Container>Content</Container>;
-};
+  return (
+    <Box sx={{
+      top: 0,
+      position: "absolute",
+      padding: 15,
+      width: "100vw",
+      height: "58vh",
+      display: "flex",
+      flexDirection: "column",
+      
+    }}>
+      <Text/>
+      <SearchInput/>
+    </Box>
+  )
+}
 
-export default Body;
+export default Body

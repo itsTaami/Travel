@@ -1,16 +1,25 @@
+import { Box, Grid } from "@mui/material";
 import React from "react";
 import Navbar from "../Navbar";
-import Bg from "./Bg";
+
 import Body from "./Body";
+import Category from "./Category";
+
+
+
+
 
 const Home = () => {
   return (
-    <div>
+    <Grid>
+      <img src="./Pics/BG1.svg" alt="" width={"100%"} />
       <Navbar />
-      <Bg />
+      
 
       <Body />
-    </div>
+  
+      <Category/>
+    </Grid>
   );
 };
 

@@ -1,5 +1,5 @@
-import { Stack } from "@mui/material";
-import React from "react";
+import { Grid, Stack } from "@mui/material";
+
 import * as React from "react";
 import { styled, alpha } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
@@ -10,6 +10,13 @@ import Typography from "@mui/material/Typography";
 import InputBase from "@mui/material/InputBase";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
+import Icon from "@mui/material/Icon";
+import TextField from "@mui/material/TextField";
+
+import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
+import PersonIcon from "@mui/icons-material/Person";
+
+import Button from "@mui/material/Button";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -54,17 +61,98 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 const SearchInput = () => {
   return (
-    <Stack>
-      <Search>
-        <SearchIconWrapper>
-          <SearchIcon />
-        </SearchIconWrapper>
-        <StyledInputBase
-          placeholder="Search…"
-          inputProps={{ "aria-label": "search" }}
-        />
-      </Search>
-    </Stack>
+    <Box>
+      <Grid
+        sx={{ background: "transparent", boxShadow: "none", width: "100%" }}
+      >
+        <Search
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            borderRadius: "15px",
+          }}
+        >
+          <SearchIconWrapper sx={{ color:"white"    }}>
+            <SearchIcon />
+          </SearchIconWrapper>
+          <StyledInputBase
+            placeholder="Search…"
+            
+            
+            inputProps={{ "aria-label": "search" }}
+            sx={{  boxShadow: "none", width: "30%", height:"55px", color:"white",marginLeft:"10px"    }}
+          />
+          {/* <TextField
+            margin="normal"
+            required
+            fullWidth
+            id="email"
+            label="Email Address"
+            name="email"
+            autoComplete="email"
+            autoFocus
+          /> */}
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-evenly",
+              
+              width: "55%",
+              color:"white"
+            }}
+          >
+            <Grid
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+                width: "14%",
+              }}
+            >
+              <CalendarTodayIcon />
+              <Typography>Check in</Typography>
+            </Grid>
+            <Grid
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+                width: "14%",
+              }}
+            >
+              <CalendarTodayIcon />
+              <Typography>Check out</Typography>
+            </Grid>
+
+            <Grid
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+                
+                width: "19%",
+              }}
+            >
+              <PersonIcon />
+              <Typography>1 room,2 adults</Typography>
+            </Grid>
+
+            <Button
+              variant="contained"
+              sx={{
+                background: "white",
+                color: "#0d6efd",
+                borderRadius: "20px",
+              }}
+            >
+              Search
+            </Button>
+          </Box>
+        </Search>
+      </Grid>
+    </Box>
   );
 };
 
