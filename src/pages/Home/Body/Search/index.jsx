@@ -73,15 +73,19 @@ const SearchInput = () => {
             borderRadius: "15px",
           }}
         >
-          <SearchIconWrapper sx={{ color:"white"    }}>
+          <SearchIconWrapper sx={{ color: "white" }}>
             <SearchIcon />
           </SearchIconWrapper>
           <StyledInputBase
             placeholder="Search…"
-            
-            
             inputProps={{ "aria-label": "search" }}
-            sx={{  boxShadow: "none", width: "30%", height:"55px", color:"white",marginLeft:"10px"    }}
+            sx={{
+              boxShadow: "none",
+              width: "30%",
+              height: "55px",
+              color: "white",
+              marginLeft: "10px",
+            }}
           />
           {/* <TextField
             margin="normal"
@@ -98,9 +102,9 @@ const SearchInput = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "space-evenly",
-              
+
               width: "55%",
-              color:"white"
+              color: "white",
             }}
           >
             <Grid
@@ -131,7 +135,7 @@ const SearchInput = () => {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "space-between",
-                
+
                 width: "19%",
               }}
             >

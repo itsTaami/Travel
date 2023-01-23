@@ -1,24 +1,29 @@
+import { Margin } from "@mui/icons-material";
 import { Box, Grid } from "@mui/material";
 import React from "react";
 import Navbar from "../Navbar";
 
 import Body from "./Body";
+import Countries from "./Body/Countries";
 import Category from "./Category";
-
-
-
-
 
 const Home = () => {
   return (
     <Grid>
-      <img src="./Pics/BG1.svg" alt="" width={"100%"} />
-      <Navbar />
-      
-
-      <Body />
-  
-      <Category/>
+      <Grid
+        sx={{
+          background: "url(./Pics/BG1.svg) no-repeat",
+          backgroundSize: "cover",
+          height: "100vh",
+        }}
+      >
+        <Navbar />
+        <Body />
+        <Category />
+      </Grid>
+      <Grid sx={{ marginLeft: "5%" }}>
+        <Countries />
+      </Grid>
     </Grid>
   );
 };
