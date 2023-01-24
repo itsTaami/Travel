@@ -1,6 +1,7 @@
 import { Margin } from "@mui/icons-material";
 import { Box, Grid } from "@mui/material";
 import React from "react";
+import Offers from "../../components/Offers";
 import Navbar from "../Navbar";
 
 import Body from "./Body";
@@ -23,6 +24,9 @@ const Home = () => {
       </Grid>
       <Grid sx={{ marginLeft: "5%" }}>
         <Countries />
+      </Grid>
+      <Grid sx={{ marginLeft: "5%" }}>
+        <Offers />
       </Grid>
     </Grid>
   );

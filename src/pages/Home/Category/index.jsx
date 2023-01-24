@@ -9,12 +9,11 @@ import Button from "@mui/material/Button";
 import Item from "./Item";
 import Map from "./Map";
 
-
 const Category = () => {
   return (
     <Box
       sx={{
-        top: 350,
+        top: 500,
         position: "absolute",
         padding: 15,
         width: "100vw",
@@ -28,14 +27,12 @@ const Category = () => {
           fontSize: "2rem",
           fontWeight: 700,
           color: "#fff",
-          marginBottom:"30px"
+          marginBottom: "30px",
         }}
       >
         Top categories
       </Typography>
-      <Map/>
-      
-      
+      <Map />
     </Box>
   );
 };
