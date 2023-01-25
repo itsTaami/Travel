@@ -27,7 +27,7 @@ const ConnectList = (props) => {
             marginTop: "20px",
           }}
         >
-          <img src={props.img} alt="" width="480px" />
+          <img src={props.img} alt="" width="480vw" />
         </Grid>
 
         <Grid
