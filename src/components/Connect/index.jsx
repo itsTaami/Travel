@@ -1,13 +1,13 @@
 import { Grid, Typography } from "@mui/material";
 import React from "react";
-import BrowseMap from "./BrowseMap";
+import ConnectMap from "./ConnectMap";
 
-const Browse = () => {
+const Connect = () => {
   return (
     <Grid
       sx={{
-        marginTop: "-1%",
-        width: "100vw",
+        marginTop: "6%",
+        width: "90vw",
         height: "58vh",
       }}
     >
@@ -16,14 +16,14 @@ const Browse = () => {
           fontSize: "2rem",
           fontWeight: 700,
           color: "#000",
-          marginBottom: "30px",
+          marginBottom: "5px",
         }}
       >
-        Browse by property type
+        Connect
       </Typography>
-      <BrowseMap />
+      <ConnectMap />
     </Grid>
   );
 };
 
-export default Browse;
+export default Connect;
