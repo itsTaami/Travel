@@ -7,7 +7,6 @@ const Connect = () => {
     <Grid
       sx={{
         marginTop: "6%",
-        width: "90vw",
         height: "58vh",
       }}
     >
@@ -19,7 +18,7 @@ const Connect = () => {
           marginBottom: "5px",
         }}
       >
-        Connect
+        Connect with other travelers in our community
       </Typography>
       <ConnectMap />
     </Grid>

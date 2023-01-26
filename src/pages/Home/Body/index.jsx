@@ -13,7 +13,7 @@ const Body = () => {
     <Box
       sx={{
         top: 0,
-        position: "absolute",
+
         padding: 15,
         width: "100vw",
         height: "58vh",

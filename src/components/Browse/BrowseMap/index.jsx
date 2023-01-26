@@ -9,7 +9,7 @@ const BrowseMap = () => {
     <Grid
       sx={{
         display: "flex",
-        gap: "50px",
+        gap: "90px",
         overflowX: "scroll",
         "&::-webkit-scrollbar": {
           display: "none",

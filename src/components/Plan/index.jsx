@@ -6,7 +6,6 @@ const Plan = () => {
     <Grid
       sx={{
         marginTop: "-7%",
-        width: "100vw",
         height: "58vh",
         marginLeft: 1,
       }}

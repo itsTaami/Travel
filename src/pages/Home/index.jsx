@@ -1,8 +1,10 @@
 import { Margin } from "@mui/icons-material";
 import { Box, Grid } from "@mui/material";
 import React from "react";
+import AppSection from "../../components/Appsection";
 import Browse from "../../components/Browse";
 import Connect from "../../components/Connect";
+import Footer from "../../components/footer";
 import Offers from "../../components/Offers";
 import Plan from "../../components/Plan";
 import Navbar from "../Navbar";
@@ -24,7 +26,9 @@ const Home = () => {
       >
         <Navbar />
         <Body />
-        <Category />
+        <Grid sx={{ marginLeft: "5%" }}>
+          <Category />
+        </Grid>
       </Grid>
       <Grid sx={{ marginLeft: "5%" }}>
         <Countries />
@@ -38,8 +42,14 @@ const Home = () => {
       <Grid sx={{ marginLeft: "5%" }}>
         <Plan />
       </Grid>
-      <Grid sx={{ marginLeft: "5%" }}>
+      <Grid sx={{ marginLeft: "5%", marginBottom: "8%" }}>
         <Connect />
+      </Grid>
+      <Grid>
+        <AppSection />
+      </Grid>
+      <Grid>
+        <Footer />
       </Grid>
     </Grid>
   );

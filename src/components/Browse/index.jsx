@@ -7,7 +7,7 @@ const Browse = () => {
     <Grid
       sx={{
         marginTop: "-1%",
-        width: "100vw",
+
         height: "58vh",
       }}
     >

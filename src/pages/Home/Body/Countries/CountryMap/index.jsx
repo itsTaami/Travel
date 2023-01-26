@@ -8,13 +8,12 @@ const CountryMap = () => {
     <Grid
       sx={{
         display: "flex",
-        gap: "50px",
-        overflowX: "auto",
+        gap: "90px",
+        overflowX: "scroll",
         "&::-webkit-scrollbar": {
           display: "none",
         },
         padding: "50px 50px 50px 10px ",
-        width: "100%",
       }}
     >
       {Destinations.map((item) => (

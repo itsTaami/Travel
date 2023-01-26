@@ -11,15 +11,9 @@ import Map from "./Map";
 
 const Category = () => {
   return (
-    <Box
+    <Grid
       sx={{
-        top: 500,
-        position: "absolute",
-        padding: 15,
-        width: "100vw",
         height: "58vh",
-        display: "flex",
-        flexDirection: "column",
       }}
     >
       <Typography
@@ -33,7 +27,7 @@ const Category = () => {
         Top categories
       </Typography>
       <Map />
-    </Box>
+    </Grid>
   );
 };
 

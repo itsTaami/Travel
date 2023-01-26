@@ -7,7 +7,6 @@ const Offers = () => {
     <Grid
       sx={{
         marginTop: "-4%",
-        width: "100vw",
         height: "58vh",
       }}
     >

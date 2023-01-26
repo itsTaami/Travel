@@ -1,4 +1,4 @@
- import * as React from "react";
+import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -15,14 +15,15 @@ const navItems = ["Home", "Stays", "Flights", "Packages"];
 
 const Navbar = () => {
   return (
-    <Box sx={{ flexGrow: 1,
-      }}>
+    <Box sx={{}}>
       <AppBar
         component="nav"
-        sx={{ background: "transparent", 
-        boxShadow: "none",
-        position:"absolute",
-          }}
+        sx={{
+          background: "transparent",
+          boxShadow: "none",
+          position: "absolute",
+          width: "100%",
+        }}
       >
         <Toolbar>
           {/* <IconButton
@@ -34,7 +35,11 @@ const Navbar = () => {
           >
             <MenuIcon />
           </IconButton> */}
-          <Typography variant="h4" component="div" sx={{ width: "65%" }}>
+          <Typography
+            variant="h4"
+            component="div"
+            sx={{ width: "65%", marginLeft: "50px" }}
+          >
             trxvl.
           </Typography>
           <Divider />
@@ -48,9 +53,8 @@ const Navbar = () => {
                 xl: "flex",
               },
               width: "25%",
-              
+
               marginRight: "20px",
-              marginLeft: "25px",
 
               justifyContent: "space-around",
             }}

@@ -1,29 +1,27 @@
 import { Grid, Typography } from "@mui/material";
 import React from "react";
-import CountryMap from "./CountryMap";
+import BeachMap from "./BeachMap";
 
-const Countries = () => {
+const Beach = () => {
   return (
     <Grid
       sx={{
         marginTop: "-10%",
-        left: 0,
         height: "58vh",
       }}
     >
       <Typography
-        style={{
+        sx={{
           fontSize: "2rem",
-          fontWeight: 700,
-          color: "#fff",
-          marginBottom: "30px",
+          fontWeight: "600",
+          color: "#000",
         }}
       >
-        Top Vacation Destinations
+        Popular Beach Destinations
       </Typography>
-      <CountryMap />
+      <BeachMap />
     </Grid>
   );
 };
 
-export default Countries;
+export default Beach;

@@ -9,11 +9,11 @@ const Map = () => {
       sx={{
         display: "flex",
 
-        width: "100%",
+        width: "90%",
 
         flexWrap: "wrap",
         alignItems: "center",
-        justifyContent: "space-evenly",
+        justifyContent: "space-between",
       }}
     >
       {Locations.map((item) => (

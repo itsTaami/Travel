@@ -24,7 +24,7 @@ const BasicModal = () => {
 
   return (
     <div>
-      <Button onClick={handleOpen} sx={{ color: "white" }}>
+      <Button onClick={handleOpen} sx={{ color: "white", fontWeight: "700" }}>
         Sign-In
       </Button>
       <Modal

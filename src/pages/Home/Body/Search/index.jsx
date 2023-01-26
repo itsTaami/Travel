@@ -62,9 +62,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 const SearchInput = () => {
   return (
     <Box>
-      <Grid
-        sx={{ background: "transparent", boxShadow: "none", width: "100%" }}
-      >
+      <Grid sx={{ background: "transparent", boxShadow: "none", width: "95%" }}>
         <Search
           sx={{
             display: "flex",
@@ -111,7 +109,7 @@ const SearchInput = () => {
               sx={{
                 display: "flex",
                 alignItems: "center",
-                justifyContent: "space-between",
+                justifyContent: "space-evenly",
                 width: "14%",
               }}
             >
@@ -122,7 +120,7 @@ const SearchInput = () => {
               sx={{
                 display: "flex",
                 alignItems: "center",
-                justifyContent: "space-between",
+                justifyContent: "space-evenly",
                 width: "14%",
               }}
             >
@@ -134,7 +132,7 @@ const SearchInput = () => {
               sx={{
                 display: "flex",
                 alignItems: "center",
-                justifyContent: "space-between",
+                justifyContent: "space-evenly",
 
                 width: "19%",
               }}
