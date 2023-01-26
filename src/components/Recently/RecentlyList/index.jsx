@@ -2,7 +2,7 @@ import { Box, Card, Grid, Typography } from "@mui/material";
 import React from "react";
 import StarIcon from "@mui/icons-material/Star";
 
-const BeachList = (props) => {
+const RecentlyList = (props) => {
   return (
     <Box sx={{ height: "700px" }}>
       <Card
@@ -118,4 +118,4 @@ const BeachList = (props) => {
     </Box>
   );
 };
-export default BeachList;
+export default RecentlyList;
