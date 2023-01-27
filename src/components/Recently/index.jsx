@@ -1,17 +1,23 @@
-import { Typography } from '@mui/material'
-import React from 'react'
-import BeachMap from '../Beach/BeachMap'
+import { Grid, Typography } from "@mui/material";
+import React from "react";
+import BeachMap from "../Beach/BeachMap";
+import RecentlyMap from "./RecentlyMap";
 
 const Recently = () => {
   return (
-    <div>
-        <Typography>
-                Recently Viewed
-        </Typography>
-        <BeachMap/>
-      
-    </div>
-  )
-}
+    <Grid sx={{ marginTop: "3%" }}>
+      <Typography
+        sx={{
+          fontSize: "2rem",
+          fontWeight: "600",
+          color: "#000",
+        }}
+      >
+        Recently Viewed
+      </Typography>
+      <RecentlyMap />
+    </Grid>
+  );
+};
 
-export default Recently
+export default Recently;

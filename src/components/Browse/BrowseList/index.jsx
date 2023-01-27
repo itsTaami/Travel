@@ -14,7 +14,7 @@ const BrowseList = (props) => {
           color: "white",
         }}
       >
-        <img src={props.img} alt="" width="530px" height="300px" />
+        <img src={props.img} alt="" width="500px" height="300px" />
         <Typography
           sx={{
             position: "absolute",

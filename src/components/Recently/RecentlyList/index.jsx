@@ -4,7 +4,7 @@ import StarIcon from "@mui/icons-material/Star";
 
 const RecentlyList = (props) => {
   return (
-    <Box sx={{ height: "700px" }}>
+    <Box>
       <Card
         sx={{
           padding: "20px",
@@ -23,7 +23,7 @@ const RecentlyList = (props) => {
             display: "flex",
             justifyContent: "space-between",
             width: "95%",
-            background: "aqua",
+
             alignItems: "center",
             marginTop: "5%",
             marginBottom: "5%",
@@ -66,7 +66,7 @@ const RecentlyList = (props) => {
           sx={{
             display: "flex",
             justifyContent: "space-between",
-            background: "yellow",
+
             width: "95%",
             marginBottom: "1vw",
           }}
@@ -79,7 +79,7 @@ const RecentlyList = (props) => {
         <Box
           sx={{
             alignSelf: "self-start",
-            background: "purple",
+
             marginLeft: "0.5vw",
             marginBottom: "1vw",
           }}
@@ -93,14 +93,16 @@ const RecentlyList = (props) => {
             display: "flex",
             alignSelf: "self-start",
             justifyContent: "space-between",
-            background: "purple",
+
             marginLeft: "0.5vw",
             marginBottom: "1vw",
             width: "15vw",
           }}
         >
           <Box>
-            <Typography sx={{ fontSize: "1.5rem",marginTop:"5%"}} >₹88,952</Typography>
+            <Typography sx={{ fontSize: "1.5rem", marginTop: "5%" }}>
+              ₹88,952
+            </Typography>
           </Box>
 
           <Box
@@ -111,7 +113,7 @@ const RecentlyList = (props) => {
             }}
           >
             <Typography sx={{ fontSize: "2rem" }}>₹88,952</Typography>
-            <Typography sx={{alignSelf:"flex-end"}}>Per person</Typography>
+            <Typography sx={{ alignSelf: "flex-end" }}>Per person</Typography>
           </Box>
         </Box>
       </Card>

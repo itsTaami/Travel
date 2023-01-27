@@ -6,15 +6,15 @@ const Beach = () => {
   return (
     <Grid
       sx={{
-        marginTop: "-10%",
-        height: "58vh",
+        marginTop: "-15%",
       }}
     >
       <Typography
         sx={{
           fontSize: "2rem",
           fontWeight: "600",
-          color: "#000",
+          color: "#fff",
+          marginBottom: "2%",
         }}
       >
         Popular Beach Destinations

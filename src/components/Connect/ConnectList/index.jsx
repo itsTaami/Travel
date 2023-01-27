@@ -7,38 +7,39 @@ const ConnectList = (props) => {
       sx={{
         display: "flex",
         flexWrap: "wrap",
-        width: "100vw",
-        gap: "50px",
+        width: "100%",
+        marginTop: "2%",
       }}
     >
       <Card
         sx={{
-          width: "24vw",
+          width: "25vw",
           height: "50vh",
-          marginRight: "40px",
           borderRadius: "30px",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
         }}
       >
         <Grid
           sx={{
             display: "flex",
-            alignItems: "center",
             justifyContent: "center",
-            marginTop: "20px",
+            height: "60%",
+            marginTop: "4%",
           }}
         >
-          <img src={props.img} alt="" width="480vw" />
+          <img src={props.img} alt="" width="90%" />
         </Grid>
 
         <Grid
           sx={{
-            width: "25vw",
-            height: "18vh",
-            marginLeft: "30px",
             display: "flex",
             flexDirection: "column",
-            justifyContent: "space-evenly",
-            marginTop: "10px",
+            justifyContent: "space-around",
+
+            height: "35%",
+            marginLeft: "5%",
           }}
         >
           <Typography
@@ -46,13 +47,12 @@ const ConnectList = (props) => {
               fontSize: "35px",
               fontWeight: 300,
               color: "#000",
-              width: "500px",
             }}
           >
             {props.title}
           </Typography>
-          <Typography>Travel community</Typography>
-          <Typography>155,073 travelers</Typography>
+          <Typography sx={{ opacity: "0.5" }}>Travel community</Typography>
+          <Typography sx={{ opacity: "0.5" }}>155,073 travelers</Typography>
         </Grid>
       </Card>
       {/* <Box

@@ -6,8 +6,7 @@ const Connect = () => {
   return (
     <Grid
       sx={{
-        marginTop: "6%",
-        height: "58vh",
+        marginTop: "2%",
       }}
     >
       <Typography
@@ -15,7 +14,6 @@ const Connect = () => {
           fontSize: "2rem",
           fontWeight: 700,
           color: "#000",
-          marginBottom: "5px",
         }}
       >
         Connect with other travelers in our community

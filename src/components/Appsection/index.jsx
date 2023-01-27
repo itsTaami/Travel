@@ -33,7 +33,7 @@ const AppSection = () => {
       >
         <Box
           sx={{
-            height: "50.5vh",
+            height: "50vh",
             display: "flex",
             justifyContent: "center",
           }}

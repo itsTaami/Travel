@@ -15,7 +15,6 @@ const Second = () => {
           background: "url(./Pics/secondBG.svg) no-repeat",
           backgroundSize: "cover",
           width: "100%",
-          height: "100vh",
         }}
       >
         <Navbar />
@@ -27,7 +26,9 @@ const Second = () => {
       <Grid sx={{ marginLeft: "5%" }}>
         <Beach />
       </Grid>
-      <Grid sx={{ marginLeft: "5%" }}><Recently/></Grid>
+      <Grid sx={{ marginLeft: "5%" }}>
+        <Recently />
+      </Grid>
       <Grid sx={{ marginLeft: "5%" }}>..</Grid>
       <Grid sx={{ marginLeft: "5%" }}>..</Grid>
       <Grid sx={{ marginLeft: "5%", marginBottom: "8%" }}>..</Grid>

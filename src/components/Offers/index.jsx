@@ -4,18 +4,12 @@ import OffersMap from "./OffersMap";
 
 const Offers = () => {
   return (
-    <Grid
-      sx={{
-        marginTop: "-4%",
-        height: "58vh",
-      }}
-    >
+    <Grid>
       <Typography
         style={{
           fontSize: "2rem",
           fontWeight: 700,
           color: "#000",
-          marginBottom: "50px",
         }}
       >
         Offers

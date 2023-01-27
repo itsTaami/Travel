@@ -8,11 +8,12 @@ const ConnectMap = () => {
     <Grid
       sx={{
         display: "flex",
+        gap: "3%",
         overflowX: "scroll",
         "&::-webkit-scrollbar": {
           display: "none",
         },
-        padding: "50px 50px 50px 10px ",
+        padding: "10px 10px 10px 10px ",
       }}
     >
       {Connect.map((item) => (

@@ -7,8 +7,8 @@ const Countries = () => {
     <Grid
       sx={{
         marginTop: "-10%",
-        left: 0,
-        height: "58vh",
+
+        height: "100%",
       }}
     >
       <Typography
@@ -16,7 +16,6 @@ const Countries = () => {
           fontSize: "2rem",
           fontWeight: 700,
           color: "#fff",
-          marginBottom: "30px",
         }}
       >
         Top Vacation Destinations

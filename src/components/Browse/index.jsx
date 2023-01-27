@@ -4,19 +4,12 @@ import BrowseMap from "./BrowseMap";
 
 const Browse = () => {
   return (
-    <Grid
-      sx={{
-        marginTop: "-1%",
-
-        height: "58vh",
-      }}
-    >
+    <Grid>
       <Typography
         style={{
           fontSize: "2rem",
           fontWeight: 700,
           color: "#000",
-          marginBottom: "30px",
         }}
       >
         Browse by property type
