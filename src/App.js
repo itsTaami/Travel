@@ -4,6 +4,7 @@ import { CssBaseline, Modal } from "@mui/material";
 import AuthPage from "./pages/Auth";
 import "./App.css";
 import Second from "./pages/SecondPage";
+import ThirdPage from "./pages/ThirdPage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/login" element={<AuthPage />} />
           <Route path="/" element={<Home />} />
           <Route path="/second" element={<Second />} />
+          <Route path="/third" element={<ThirdPage />} />
         </Routes>
       </Router>
     </div>

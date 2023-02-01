@@ -2,6 +2,7 @@ import { Grid } from "@mui/material";
 import React from "react";
 import Beach from "../../components/Beach";
 import Footer from "../../components/footer";
+import Packages from "../../components/PackagesSec";
 import Recently from "../../components/Recently";
 import Body from "../Home/Body";
 import Category from "../Home/Category";
@@ -29,7 +30,9 @@ const Second = () => {
       <Grid sx={{ marginLeft: "5%" }}>
         <Recently />
       </Grid>
-      <Grid sx={{ marginLeft: "5%" }}>..</Grid>
+      <Grid sx={{ marginLeft: "5%" }}>
+        <Packages />
+      </Grid>
       <Grid sx={{ marginLeft: "5%" }}>..</Grid>
       <Grid sx={{ marginLeft: "5%", marginBottom: "8%" }}>..</Grid>
       <Grid>...</Grid>

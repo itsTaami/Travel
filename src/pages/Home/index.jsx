@@ -7,7 +7,8 @@ import { Navigate } from "react-router-dom";
 import AppSection from "../../components/Appsection";
 import Browse from "../../components/Browse";
 import Connect from "../../components/Connect";
-import Footer from "../../components/footer";
+import Footer from "../../components/footer/index2";
+
 import Offers from "../../components/Offers";
 import Plan from "../../components/Plan";
 import Navbar from "../Navbar";
@@ -30,7 +31,7 @@ const Home = () => {
       <Grid>
         {/* <Typography variant="h1">Тавтай морилно уу</Typography> */}
 
-        <Grid
+        {/* <Grid
           sx={{
             background: "url(./Pics/BG1.svg) no-repeat",
             backgroundSize: "cover",
@@ -43,74 +44,74 @@ const Home = () => {
           <Grid sx={{ marginLeft: "5%" }}>
             <Category />
           </Grid>
-        </Grid>
-        <Grid sx={{ marginLeft: "5%" }}>
+        </Grid> */}
+        {/* <Grid sx={{ marginLeft: "5%" }}>
           <Countries />
-        </Grid>
-        <Grid sx={{ marginLeft: "5%" }}>
+        </Grid> */}
+        {/* <Grid sx={{ marginLeft: "5%" }}>
           <Offers />
-        </Grid>
-        <Grid sx={{ marginLeft: "5%" }}>
+        </Grid> */}
+        {/* <Grid sx={{ marginLeft: "5%" }}>
           <Browse />
-        </Grid>
-        <Grid sx={{ marginLeft: "5%" }}>
+        </Grid> */}
+        {/* <Grid sx={{ marginLeft: "5%" }}>
           <Plan />
-        </Grid>
-        <Grid sx={{ marginLeft: "5%", marginBottom: "8%" }}>
+        </Grid> */}
+        {/* <Grid sx={{ marginLeft: "5%", marginBottom: "8%" }}>
           <Connect />
-        </Grid>
-        <Grid>
+        </Grid> */}
+        {/* <Grid>
           <AppSection />
-        </Grid>
+        </Grid> */}
         <Grid>
           <Footer />
         </Grid>
-        <Button onClick={logOut}>Гарах</Button>
+        {/* <Button onClick={logOut}>Гарах</Button> */}
       </Grid>
     );
   } else {
-    return <Navigate replace to="/login" />;
+    // return <Navigate replace to="/login" />;
   }
 
-  return (
-    <Grid>
-      <Grid
-        sx={{
-          background: "url(./Pics/BG1.svg) no-repeat",
-          backgroundSize: "cover",
-          width: "100%",
-          height: "100vh",
-        }}
-      >
-        <Navbar />
-        <Body />
-        <Grid sx={{ marginLeft: "5%" }}>
-          <Category />
-        </Grid>
-      </Grid>
-      <Grid sx={{ marginLeft: "5%" }}>
-        <Countries />
-      </Grid>
-      <Grid sx={{ marginLeft: "5%" }}>
-        <Offers />
-      </Grid>
-      <Grid sx={{ marginLeft: "5%" }}>
-        <Browse />
-      </Grid>
-      <Grid sx={{ marginLeft: "5%" }}>
-        <Plan />
-      </Grid>
-      <Grid sx={{ marginLeft: "5%", marginBottom: "8%" }}>
-        <Connect />
-      </Grid>
-      <Grid>
-        <AppSection />
-      </Grid>
-      <Grid>
-        <Footer />
-      </Grid>
-    </Grid>
-  );
+  // return (
+  //   <Grid>
+  //     <Grid
+  //       sx={{
+  //         background: "url(./Pics/BG1.svg) no-repeat",
+  //         backgroundSize: "cover",
+  //         width: "100%",
+  //         height: "100vh",
+  //       }}
+  //     >
+  //       <Navbar />
+  //       <Body />
+  //       <Grid sx={{ marginLeft: "5%" }}>
+  //         <Category />
+  //       </Grid>
+  //     </Grid>
+  //     <Grid sx={{ marginLeft: "5%" }}>
+  //       <Countries />
+  //     </Grid>
+  //     <Grid sx={{ marginLeft: "5%" }}>
+  //       <Offers />
+  //     </Grid>
+  //     <Grid sx={{ marginLeft: "5%" }}>
+  //       <Browse />
+  //     </Grid>
+  //     <Grid sx={{ marginLeft: "5%" }}>
+  //       <Plan />
+  //     </Grid>
+  //     <Grid sx={{ marginLeft: "5%", marginBottom: "8%" }}>
+  //       <Connect />
+  //     </Grid>
+  //     <Grid>
+  //       <AppSection />
+  //     </Grid>
+  //     <Grid>
+  //       <Footer />
+  //     </Grid>
+  //   </Grid>
+  // );
 };
 
 export default Home;

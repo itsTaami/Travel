@@ -1,8 +1,9 @@
-import { Box, Card, Grid, Typography } from "@mui/material";
 import React from "react";
+import { Box, Card, Grid, Typography } from "@mui/material";
+
 import StarIcon from "@mui/icons-material/Star";
 
-const RecentlyList = (props) => {
+const PackageList = (props) => {
   return (
     <Box>
       <Card
@@ -119,4 +120,5 @@ const RecentlyList = (props) => {
     </Box>
   );
 };
-export default RecentlyList;
+
+export default PackageList;
