@@ -26,7 +26,6 @@ const Home = () => {
     setIsLogged(false);
   };
 
-  if (isLogged === "true") {
     return (
       <Grid>
         {/* <Typography variant="h1">Тавтай морилно уу</Typography> */}
@@ -68,49 +67,9 @@ const Home = () => {
         {/* <Button onClick={logOut}>Гарах</Button> */}
       </Grid>
     );
-  } else {
-    // return <Navigate replace to="/login" />;
-  }
+  
 
-  // return (
-  //   <Grid>
-  //     <Grid
-  //       sx={{
-  //         background: "url(./Pics/BG1.svg) no-repeat",
-  //         backgroundSize: "cover",
-  //         width: "100%",
-  //         height: "100vh",
-  //       }}
-  //     >
-  //       <Navbar />
-  //       <Body />
-  //       <Grid sx={{ marginLeft: "5%" }}>
-  //         <Category />
-  //       </Grid>
-  //     </Grid>
-  //     <Grid sx={{ marginLeft: "5%" }}>
-  //       <Countries />
-  //     </Grid>
-  //     <Grid sx={{ marginLeft: "5%" }}>
-  //       <Offers />
-  //     </Grid>
-  //     <Grid sx={{ marginLeft: "5%" }}>
-  //       <Browse />
-  //     </Grid>
-  //     <Grid sx={{ marginLeft: "5%" }}>
-  //       <Plan />
-  //     </Grid>
-  //     <Grid sx={{ marginLeft: "5%", marginBottom: "8%" }}>
-  //       <Connect />
-  //     </Grid>
-  //     <Grid>
-  //       <AppSection />
-  //     </Grid>
-  //     <Grid>
-  //       <Footer />
-  //     </Grid>
-  //   </Grid>
-  // );
+
 };
 
 export default Home;
