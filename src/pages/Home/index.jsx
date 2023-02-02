@@ -8,14 +8,14 @@ import AppSection from "../../components/Appsection";
 import Browse from "../../components/Browse";
 import Connect from "../../components/Connect";
 import Footer from "../../components/footer/index2";
-
 import Offers from "../../components/Offers";
 import Plan from "../../components/Plan";
 import Navbar from "../Navbar";
-
 import Body from "./Body";
 import Countries from "./Body/Countries";
 import Category from "./Category";
+import FirstPage from "../FirstPage/index"
+
 
 const Home = () => {
   const newLogged = localStorage.getItem("isLogged");
@@ -39,7 +39,7 @@ const Home = () => {
             height: "100vh",
           }}
         >
-          <Body />
+          <FirstPage/>
           {/* <Grid sx={{ marginLeft: "5%" }}>
             <Category />
           </Grid> */}

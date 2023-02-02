@@ -1,21 +1,12 @@
 import { Grid, Stack } from "@mui/material";
-
 import * as React from "react";
 import { styled, alpha } from "@mui/material/styles";
-import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import InputBase from "@mui/material/InputBase";
-import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
-import Icon from "@mui/material/Icon";
-import TextField from "@mui/material/TextField";
-
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import PersonIcon from "@mui/icons-material/Person";
-
 import Button from "@mui/material/Button";
 
 const Search = styled("div")(({ theme }) => ({
