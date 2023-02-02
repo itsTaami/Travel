@@ -14,18 +14,19 @@ import Container from "@mui/material/Container";
 import { useState } from "react";
 import { Alert, Snackbar } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 // import { createTheme, ThemeProvider } from "@mui/material/styles";
 
-const SignIn = (props) => {
+const SignIn = ({ setisSignIn, setUser, handleClose }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [open, setOpen] = useState(true);
-  const navigate = useNavigate();
+  // burtguulhed email pass heregtei (state buyu useState ashgilana). state n huvisagch.
+  const [message, setMessage] = useState(true);
+  const [status, setStatus] = useState("error");
+  const [isAlert, setIsAlert] = useState(false);
+  // back aas aldaa irhed hereglegchid haruulna.
 
-  const onClose = () => {
-    setOpen(false);
-  };
   const changeEmail = (e) => {
     console.log("Email", e.target.value);
     setEmail(e.target.value);
@@ -34,15 +35,38 @@ const SignIn = (props) => {
     console.log("Password", e.target.value);
     setPassword(e.target.value);
   };
-
-  const login = () => {
-    // console.log(login);
+  const handleClick = () => {
     if (email === "" || password === "") {
-      setOpen(true);
-    } else {
-      console.log(email, password);
-      localStorage.setItem("isLogged", true);
-      navigate("/");
+      setMessage("Хэрэглэгчийн мэдээлэл хоосон байнаа.");
+      setIsAlert(true);
+      return;
+    }
+
+    login(email, password);
+  };
+  const login = async (email, password) => {
+    try {
+      const res = await axios.post("http://localhost:8000/signin", {
+        email,
+        password,
+      });
+      console.log("SUCCESS", res.data.user);
+      localStorage.setItem("user", JSON.stringify(res.data.user));
+      //hereglegch amjilltai burtguulsen tohioldold local ruu hadgalna
+      setStatus("success");
+      setMessage(res.data.message);
+      setIsAlert(true);
+      setUser(res.data.user);
+      // setStatus(true);
+      setTimeout(() => {
+        handleClose();
+      }, 5000);
+      handleClose();
+    } catch (error) {
+      console.log("ERROR", error);
+      setStatus("error");
+      setMessage(error.response.data.message);
+      setIsAlert(true);
     }
   };
 
@@ -63,7 +87,7 @@ const SignIn = (props) => {
           <Typography component="h1" variant="h5">
             Sign-In
           </Typography>
-          <Box onSubmit={props.handleSubmit} noValidate sx={{ mt: 1 }}>
+          <Box noValidate sx={{ mt: 1 }}>
             <TextField
               margin="normal"
               required
@@ -94,7 +118,7 @@ const SignIn = (props) => {
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
-              onClick={login}
+              onClick={handleClick}
             >
               Sign In
             </Button>
@@ -108,7 +132,7 @@ const SignIn = (props) => {
                 <Button
                   variant="text"
                   onClick={() => {
-                    props.setisSignIn(false);
+                    setisSignIn(false);
                   }}
                 >
                   Sign-up
@@ -118,20 +142,14 @@ const SignIn = (props) => {
           </Box>
         </Box>
         <Snackbar
-          open={open}
-          autoHideDuration={3000}
-          onClose={onClose}
-          message="Note archived"
-          // action={action}
           anchorOrigin={{ vertical: "top", horizontal: "right" }}
+          open={isAlert}
+          autoHideDuration={3000}
+          onClose={() => {
+            setIsAlert(false);
+          }}
         >
-          <Alert
-            // onClose={handleClose}
-            severity="error"
-            sx={{ width: "100%", fontSize: 10 }}
-          >
-            Check Your Username or Password
-          </Alert>
+          <Alert severity={status}>{message}</Alert>
         </Snackbar>
       </Container>
     </div>

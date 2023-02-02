@@ -61,8 +61,16 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 const SearchInput = () => {
   return (
-    <Box>
-      <Grid sx={{ background: "transparent", boxShadow: "none", width: "95%" }}>
+    <Grid xs={12} sm={12} md={12} lg={12}>
+      <Grid
+        sx={{
+          background: "transparent",
+          background: "yellow",
+          opacity: 0.5,
+          boxShadow: "none",
+          width: "95%",
+        }}
+      >
         <Search
           sx={{
             display: "flex",
@@ -154,7 +162,7 @@ const SearchInput = () => {
           </Box>
         </Search>
       </Grid>
-    </Box>
+    </Grid>
   );
 };
 

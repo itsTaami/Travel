@@ -5,10 +5,8 @@ const Text = () => {
   return (
     <Typography
       style={{
-        fontSize: "7rem",
-        width: "50vw",
-        top: 125,
-        left: 120,
+        fontSize: "6rem",
+        width: "70%",
         fontWeight: 700,
         color: "#fff",
       }}

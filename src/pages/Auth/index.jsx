@@ -2,17 +2,21 @@ import React, { useState } from "react";
 import SignIn from "./SignIn";
 import SignUp from "./SignUp";
 
-const AuthPage = () => {
-  const [isSignIn, setisSignIn] = useState(true);
+const Login = ({ handleClose, setUser }) => {
+  const [isSignIn, setSignIn] = useState(true);
   return (
-    <div>
+    <>
       {isSignIn ? (
-        <SignIn setisSignIn={setisSignIn} />
+        <SignIn
+          setUser={setUser}
+          setSignIn={setSignIn}
+          handleClose={handleClose}
+        />
       ) : (
-        <SignUp setisSignIn={setisSignIn} />
+        <SignUp setSignIn={setSignIn} />
       )}
-    </div>
+    </>
   );
 };
 
-export default AuthPage;
+export default Login;

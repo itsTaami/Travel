@@ -31,7 +31,7 @@ const Home = () => {
       <Grid>
         {/* <Typography variant="h1">Тавтай морилно уу</Typography> */}
 
-        {/* <Grid
+        <Grid
           sx={{
             background: "url(./Pics/BG1.svg) no-repeat",
             backgroundSize: "cover",
@@ -39,12 +39,11 @@ const Home = () => {
             height: "100vh",
           }}
         >
-          <Navbar />
           <Body />
-          <Grid sx={{ marginLeft: "5%" }}>
+          {/* <Grid sx={{ marginLeft: "5%" }}>
             <Category />
-          </Grid>
-        </Grid> */}
+          </Grid> */}
+        </Grid>
         {/* <Grid sx={{ marginLeft: "5%" }}>
           <Countries />
         </Grid> */}
@@ -63,9 +62,9 @@ const Home = () => {
         {/* <Grid>
           <AppSection />
         </Grid> */}
-        <Grid>
+        {/* <Grid>
           <Footer />
-        </Grid>
+        </Grid> */}
         {/* <Button onClick={logOut}>Гарах</Button> */}
       </Grid>
     );
