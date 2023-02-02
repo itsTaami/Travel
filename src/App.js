@@ -37,14 +37,14 @@ function App() {
   return (
     <div className="App">
       <Router>
-        {/* <Navbar
+        <Navbar
           login={login}
           logout={logout}
           user={user}
           open={open}
           handleClose={handleClose}
           handleOpen={handleOpen}
-        /> */}
+        />
         <Routes>
           {/* <Route path="/login" element={<AuthPage />} /> */}
           {/* <Route path="/login" element={<AuthPage />} /> */}
