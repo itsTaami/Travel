@@ -10,11 +10,11 @@ import Connect from "../../components/Connect";
 import Footer from "../../components/footer/index2";
 import Offers from "../../components/Offers";
 import Plan from "../../components/Plan";
-import Navbar from "../Navbar";
-import Body from "./Body";
-import Countries from "./Body/Countries";
-import Category from "./Category";
-import FirstPage from "../FirstPage/index"
+import Navbar from "../../components/Navbar";
+
+
+import Header from "../../components/HeaderSec/index";
+import Countries from "../../components/Countries";
 
 
 const Home = () => {
@@ -38,33 +38,27 @@ const Home = () => {
             height: "100vh",
           }}
         >
-          <FirstPage/>
-          {/* <Grid sx={{ marginLeft: "5%" }}>
-            <Category />
-          </Grid> */}
+          <Header/>
         </Grid>
-        {/* <Grid sx={{ marginLeft: "5%" }}>
+        <Grid sx={{ marginLeft: "10%" }}>
           <Countries />
-        </Grid> */}
-        {/* <Grid sx={{ marginLeft: "5%" }}>
+        </Grid>
+        <Grid sx={{ marginLeft: "10%" }}>
           <Offers />
-        </Grid> */}
-        {/* <Grid sx={{ marginLeft: "5%" }}>
+        </Grid>
+        <Grid sx={{ marginLeft: "10%" }}>
           <Browse />
-        </Grid> */}
-        {/* <Grid sx={{ marginLeft: "5%" }}>
+        </Grid>
+        <Grid >
           <Plan />
-        </Grid> */}
-        {/* <Grid sx={{ marginLeft: "5%", marginBottom: "8%" }}>
+        </Grid>
+        <Grid sx={{ marginLeft: "10%", marginBottom: "5%" }}>
           <Connect />
-        </Grid> */}
-        {/* <Grid>
+        </Grid>
+        <Grid>
           <AppSection />
-        </Grid> */}
-        {/* <Grid>
-          <Footer />
-        </Grid> */}
-        {/* <Button onClick={logOut}>Гарах</Button> */}
+        </Grid>
+        
       </Grid>
     );
   

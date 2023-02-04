@@ -84,21 +84,21 @@ const Footer = () => {
                   © 1997-2021 Netflix, Inc. (i-062d573a0ee099242)
                 </p>
               </Grid>
-              <Box sx={{ width: "200px" }}>
-                <img src="./assets/footer1.svg" alt="" />
+              <Box sx={{ width: "300px", marginRight:"-4%", display:"flex", justifyContent:"space-evenly"  }}>
+                <img src="./Pics/facebook.svg" alt="" style={{ width:"13%",  borderRadius:"0" }} />
                 <img
-                  style={{ marginLeft: "16px" }}
-                  src="./assets/footer2.svg"
+                  style={{ width:"13%", borderRadius:"0" }}
+                  src="./Pics/facebook.svg"
                   alt=""
                 />
                 <img
-                  style={{ marginLeft: "16px" }}
-                  src="./assets/footer3.svg"
+                  style={{ width:"13%", borderRadius:"0" }}
+                  src="./Pics/facebook.svg"
                   alt=""
                 />
                 <img
-                  style={{ marginLeft: "16px" }}
-                  src="./assets/footer4.svg"
+                  style={{ width:"13%", borderRadius:"0" }}
+                  src="./Pics/facebook.svg"
                   alt=""
                 />
               </Box>

@@ -14,22 +14,24 @@ const ConnectList = (props) => {
       <Card
         sx={{
           width: "25vw",
-          height: "50vh",
+          height: "45vh",
           borderRadius: "30px",
           display: "flex",
           flexDirection: "column",
-          justifyContent: "space-between",
+          justifyContent: "space-around",
+          boxShadow: "5px 5px 5px 5px rgba(158,158,158,0.8)",
         }}
       >
         <Grid
           sx={{
             display: "flex",
             justifyContent: "center",
-            height: "60%",
-            marginTop: "4%",
+            height: "45%",
+            marginBottom:"5%"
+
           }}
         >
-          <img src={props.img} alt="" width="90%" />
+          <img src={props.img} alt="" style={{width:"90%", height:"25vh"}} />
         </Grid>
 
         <Grid
@@ -37,8 +39,9 @@ const ConnectList = (props) => {
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-around",
+            marginBottom: "5%",
+            height:"10vh",
 
-            height: "35%",
             marginLeft: "5%",
           }}
         >

@@ -11,9 +11,10 @@ const Login = ({ handleClose, setUser }) => {
           setUser={setUser}
           setSignIn={setSignIn}
           handleClose={handleClose}
+          
         />
       ) : (
-        <SignUp setSignIn={setSignIn} />
+        <SignUp setSignIn={setSignIn}  />
       )}
     </>
   );

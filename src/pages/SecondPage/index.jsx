@@ -6,7 +6,7 @@ import Packages from "../../components/PackagesSec";
 import Recently from "../../components/Recently";
 import Body from "../Home/Body";
 import Category from "../Home/Category";
-import Navbar from "../Navbar";
+import Navbar from "../../components/Navbar";
 
 const Second = () => {
   return (
