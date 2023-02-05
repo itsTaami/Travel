@@ -1,45 +1,57 @@
-import { Grid } from "@mui/material";
+import { Margin } from "@mui/icons-material";
+import { Box, Button, Grid, Typography } from "@mui/material";
 import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
+import { Navigate } from "react-router-dom";
+import AppSection from "../../components/Appsection";
+import Browse from "../../components/Browse";
+import Connect from "../../components/Connect";
+
+import Offers from "../../components/Offers";
+import Plan from "../../components/Plan";
+
+
+
+import Header from "../../components/HeaderSec/index";
+import Countries from "../../components/Countries";
 import Beach from "../../components/Beach";
-import Footer from "../../components/footer";
-import Packages from "../../components/PackagesSec";
 import Recently from "../../components/Recently";
-import Body from "../Home/Body";
-import Category from "../Home/Category";
-import Navbar from "../../components/Navbar";
+import Packages from "../../components/PackagesSec";
+
+
 
 const Second = () => {
   return (
     <Grid>
-      <Grid
-        sx={{
-          background: "url(./Pics/secondBG.svg) no-repeat",
-          backgroundSize: "cover",
-          width: "100%",
-        }}
-      >
-        <Navbar />
-        <Body />
-        <Grid sx={{ marginLeft: "5%" }}>
-          <Category />
+        {/* <Typography variant="h1">Тавтай морилно уу</Typography> */}
+
+        <Grid
+          sx={{
+            background: "url(./Pics/BG1.svg) no-repeat",
+            backgroundSize: "cover",
+            width: "100%",
+            height: "100vh",
+          }}
+        >
+          <Header/>
         </Grid>
+        <Grid sx={{ marginLeft: "10%" }}>
+          <Beach />
+        </Grid>
+        <Grid sx={{ marginLeft: "10%" }}>
+          <Recently />
+        </Grid>
+        <Grid sx={{ marginLeft: "10%" }}>
+          <Packages />
+        </Grid>
+       
+        <Grid sx={{ marginLeft: "10%", marginBottom: "5%" }}>
+          
+        </Grid>
+       
+        
       </Grid>
-      <Grid sx={{ marginLeft: "5%" }}>
-        <Beach />
-      </Grid>
-      <Grid sx={{ marginLeft: "5%" }}>
-        <Recently />
-      </Grid>
-      <Grid sx={{ marginLeft: "5%" }}>
-        <Packages />
-      </Grid>
-      <Grid sx={{ marginLeft: "5%" }}>..</Grid>
-      <Grid sx={{ marginLeft: "5%", marginBottom: "8%" }}>..</Grid>
-      <Grid>...</Grid>
-      <Grid>
-        <Footer />
-      </Grid>
-    </Grid>
   );
 };
 

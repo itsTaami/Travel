@@ -9,6 +9,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Navbar from "./components/Navbar";
 import Footer from "./components/footer/footer";
+import Second from "./pages/SecondPage";
 
 function App() {
   const [user, setUser] = useState(localStorage.getItem("user"));
@@ -49,7 +50,7 @@ function App() {
           {/* <Route path="/login" element={<AuthPage />} /> */}
           {/* <Route path="/login" element={<AuthPage />} /> */}
           <Route path="/" element={<Home />} />
-          {/* <Route path="/second" element={<Second />} /> */}
+          <Route path="/second" element={<Second />} />
           <Route path="/third" element={<ThirdPage />} />
         </Routes>
         <Footer />
