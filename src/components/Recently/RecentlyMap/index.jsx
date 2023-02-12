@@ -34,8 +34,8 @@ const RecentlyMap = () => {
           flexDirection: "column",
           alignItems: "center",
           borderRadius: "25px",
-          width: "25vw",
-          height: "70vh",
+          width: "35%",
+          height: "78vh",
         }}
       >
         <Box

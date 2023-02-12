@@ -1,9 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-// import { CssBaseline, Modal } from "@mui/material";
-// import AuthPage from "./pages/Auth";
 import "./App.css";
-// import Second from "./pages/SecondPage";
+
 import ThirdPage from "./pages/ThirdPage";
 import React, { useState } from "react";
 import axios from "axios";
