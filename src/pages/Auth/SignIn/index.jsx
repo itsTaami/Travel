@@ -46,7 +46,7 @@ const SignIn = ({ setisSignIn, setUser, handleClose }) => {
   };
   const login = async (email, password) => {
     try {
-      const res = await axios.post("http://localhost:8000/signin", {
+      const res = await axios.post("http://localhost:8000/users/signin", {
         email,
         password,
       });
