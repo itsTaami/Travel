@@ -8,14 +8,14 @@ import AppSection from "../../components/Appsection";
 import Browse from "../../components/Browse";
 import Connect from "../../components/Connect";
 import Footer from "../../components/footer/index2";
-
 import Offers from "../../components/Offers";
 import Plan from "../../components/Plan";
-import Navbar from "../Navbar";
+import Navbar from "../../components/Navbar";
 
-import Body from "./Body";
-import Countries from "./Body/Countries";
-import Category from "./Category";
+
+import Header from "../../components/HeaderSec/index";
+import Countries from "../../components/Countries";
+
 
 const Home = () => {
   const newLogged = localStorage.getItem("isLogged");
@@ -26,7 +26,6 @@ const Home = () => {
     setIsLogged(false);
   };
 
-  if (isLogged === "true") {
     return (
       <Grid>
         {/* <Typography variant="h1">Тавтай морилно уу</Typography> */}
@@ -39,78 +38,32 @@ const Home = () => {
             height: "100vh",
           }}
         >
-          <Body />
-          {/* <Grid sx={{ marginLeft: "5%" }}>
-            <Category />
-          </Grid> */}
+          <Header/>
         </Grid>
-        {/* <Grid sx={{ marginLeft: "5%" }}>
+        <Grid sx={{ marginLeft: "10%" }}>
           <Countries />
-        </Grid> */}
-        {/* <Grid sx={{ marginLeft: "5%" }}>
+        </Grid>
+        <Grid sx={{ marginLeft: "10%" }}>
           <Offers />
-        </Grid> */}
-        {/* <Grid sx={{ marginLeft: "5%" }}>
+        </Grid>
+        <Grid sx={{ marginLeft: "10%" }}>
           <Browse />
-        </Grid> */}
-        {/* <Grid sx={{ marginLeft: "5%" }}>
+        </Grid>
+        <Grid >
           <Plan />
-        </Grid> */}
-        {/* <Grid sx={{ marginLeft: "5%", marginBottom: "8%" }}>
+        </Grid>
+        <Grid sx={{ marginLeft: "10%", marginBottom: "5%" }}>
           <Connect />
-        </Grid> */}
-        {/* <Grid>
+        </Grid>
+        <Grid>
           <AppSection />
-        </Grid> */}
-        {/* <Grid>
-          <Footer />
-        </Grid> */}
-        {/* <Button onClick={logOut}>Гарах</Button> */}
+        </Grid>
+        
       </Grid>
     );
-  } else {
-    // return <Navigate replace to="/login" />;
-  }
+  
 
-  // return (
-  //   <Grid>
-  //     <Grid
-  //       sx={{
-  //         background: "url(./Pics/BG1.svg) no-repeat",
-  //         backgroundSize: "cover",
-  //         width: "100%",
-  //         height: "100vh",
-  //       }}
-  //     >
-  //       <Navbar />
-  //       <Body />
-  //       <Grid sx={{ marginLeft: "5%" }}>
-  //         <Category />
-  //       </Grid>
-  //     </Grid>
-  //     <Grid sx={{ marginLeft: "5%" }}>
-  //       <Countries />
-  //     </Grid>
-  //     <Grid sx={{ marginLeft: "5%" }}>
-  //       <Offers />
-  //     </Grid>
-  //     <Grid sx={{ marginLeft: "5%" }}>
-  //       <Browse />
-  //     </Grid>
-  //     <Grid sx={{ marginLeft: "5%" }}>
-  //       <Plan />
-  //     </Grid>
-  //     <Grid sx={{ marginLeft: "5%", marginBottom: "8%" }}>
-  //       <Connect />
-  //     </Grid>
-  //     <Grid>
-  //       <AppSection />
-  //     </Grid>
-  //     <Grid>
-  //       <Footer />
-  //     </Grid>
-  //   </Grid>
-  // );
+
 };
 
 export default Home;

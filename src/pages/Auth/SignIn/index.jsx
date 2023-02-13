@@ -71,14 +71,21 @@ const SignIn = ({ setisSignIn, setUser, handleClose }) => {
   };
 
   return (
-    <div>
-      <Container component="main" maxWidth="xs">
+    <Grid >
+      <Container component="main" sx={{width:"28%",}}>
         <Box
           sx={{
             marginTop: 8,
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            background:"white",
+            paddingTop:5,
+            paddingBottom:5,
+            borderRadius:"20px"
+
+            
+           
           }}
         >
           <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
@@ -87,7 +94,7 @@ const SignIn = ({ setisSignIn, setUser, handleClose }) => {
           <Typography component="h1" variant="h5">
             Sign-In
           </Typography>
-          <Box noValidate sx={{ mt: 1 }}>
+          <Box noValidate sx={{ mt: 1, width:"70%" }}>
             <TextField
               margin="normal"
               required
@@ -152,7 +159,7 @@ const SignIn = ({ setisSignIn, setUser, handleClose }) => {
           <Alert severity={status}>{message}</Alert>
         </Snackbar>
       </Container>
-    </div>
+    </Grid>
   );
 };
 

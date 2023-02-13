@@ -3,46 +3,37 @@ import React from "react";
 
 const Plan = () => {
   return (
-    <Grid>
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          position: "relative",
-          background: "url(./Pics/plan.svg)",
-          backgroundSize: "cover",
-          height: "60vh",
-          width: "80.5%",
-          borderRadius: "30px",
-        }}
-      >
-        {/* <img src="./Pics/plan.svg" alt="" width="90%" /> */}
-        <Typography
-          style={{
-            marginTop: "5%",
-            marginLeft: "5%",
-            fontSize: "4.5rem",
-            fontWeight: 700,
-            color: "#fff",
-            width: "60%",
-          }}
-        >
-          Plan your trip with travel expert
-        </Typography>
-        <Typography
-          style={{
-            marginTop: "5%",
-            marginLeft: "5%",
-            fontSize: "2.8rem",
-            fontWeight: 400,
-            color: "#fff",
-            width: "70%",
-          }}
-        >
-          Our professional advisors can craft your perfect itinerary
-        </Typography>
-      </Box>
-    </Grid>
+    <Box
+    sx={{
+      backgroundImage: "url(./Pics/plan.svg)",
+      backgroundSize: "cover",
+      height: "395px",
+      margin: "5% 10%",
+      borderRadius: "18px",
+      padding: { lg: "8vh 10vh", xs: "5vh 7vh" },
+    }}
+  >
+    <Typography
+      sx={{
+        color: "white",
+        fontSize: { xs: "42px", md: "56px" },
+        fontWeight: "bold",
+        lineHeight: "1.2",
+        width: { xs: "100%", lg: "70vh" },
+      }}
+    >
+      Plan your trip with travel expert
+    </Typography>
+    <Typography
+      sx={{
+        color: "white",
+        fontSize: { xs: "24px", md: "32px" },
+        marginTop: "2%",
+      }}
+    >
+      Our professional advisors can craft your perfect itinerary
+    </Typography>
+  </Box>
   );
 };
 

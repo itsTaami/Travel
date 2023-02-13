@@ -5,7 +5,11 @@ import PackagesMap from "./PackageMap";
 const Packages = () => {
   return (
     <Grid>
-      <Typography>All Inclusive Packages</Typography>
+      <Typography sx={{
+          fontSize: "2rem",
+          fontWeight: "600",
+          color: "#000",
+        }}>All Inclusive Packages !</Typography>
       <Grid>
         <PackagesMap />
       </Grid>
